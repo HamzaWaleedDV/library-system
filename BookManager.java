@@ -7,7 +7,7 @@ public class BookManager {
     }
 
     public Book findBook(Library library, int id){
-        for(int i = 0 ; i < library.books.size(); i++)
+        for(int i = 0 ; i < library.getBooks().size(); i++)
             if (library.getBooks().get(i).getID() == id) 
                 return library.getBooks().get(i);
         return null;
